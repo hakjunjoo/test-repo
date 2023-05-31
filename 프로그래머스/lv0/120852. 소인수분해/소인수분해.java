@@ -7,7 +7,6 @@ class Solution {
             while(n%i == 0) {
                 list.add(i);
                 n = n/i;
-                i = 2;
             }
         }
         
