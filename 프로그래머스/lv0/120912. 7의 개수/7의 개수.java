@@ -10,7 +10,7 @@ class Solution {
         // 문자열 나누고 7 비교하기
         for (int i=0; i<str.length(); i++) {
             if(str.charAt(i) == '7') {
-                answer += 1;
+                answer ++;
             }
         }
         return answer;
