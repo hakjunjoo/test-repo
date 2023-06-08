@@ -1,3 +1,4 @@
+import java.util.*;
 class Solution {
     public int solution(int i, int j, int k) {
         int answer = 0;
@@ -7,17 +8,21 @@ class Solution {
             numStr += l+"";
         }
         
-        // String a = k+"";
-        // String[] numArr = numStr.split("[^a]"); 정규식..
-        // answer = numArr.length;
-        
         String a = k+"";
-        String[] numArr = numStr.split("");
-        for(int l=0; l<numArr.length; l++) {
-            if(numArr[l].equals(a)) {
-                answer++;
-            }
-        }
+        String[] numArr = numStr.split(a);
+        String sumArr = String.join("", numArr);
+        // System.out.println(sumArr);
+        // System.out.println(Arrays.toString(numArr));
+        answer = numStr.length() - sumArr.length();
+        
+        // String a = k+"";
+        // String[] numArr = numStr.split("");
+        // for(int l=0; l<numArr.length; l++) {
+        //     if(numArr[l].equals(a)) {
+        //         answer++;
+        //     }
+        // }
+        
         return answer;
     }
 }
