@@ -51,8 +51,8 @@ class Solution {
         }
 
         // 교점이 있는 부분만 *로 바꾼다.
-        long a = yMin<0 ? -yMin : -yMin;
-        long b = xMin<0 ? -xMin : -xMin;
+        long a = -yMin;
+        long b = -xMin;
 
         for (Coordinate coordinate : list) {
             answer[(int)(coordinate.getY() + a)][(int)(coordinate.getX() + b)] = "*";
