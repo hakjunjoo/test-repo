@@ -3,7 +3,7 @@ import java.util.*;
 class Solution {
     public int[] solution(int n) {
         
-       int cnt = 0;
+        int cnt = 0;
         int i = 0;
         int j = 0;
         int[][] nArr = new int[n][n];
